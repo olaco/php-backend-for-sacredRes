@@ -10,6 +10,8 @@ $popstdata= file_get_contents("php://input");
 
 //  Extract the data
     $request =json_decode($popstdata);    
+
+    // reference name & description below cos they're declared as global variable in start.php
     $go->name=$request->name;
     $go->description=$request->description;
 
